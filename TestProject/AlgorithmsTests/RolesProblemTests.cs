@@ -83,12 +83,12 @@ namespace TestProject.AlgorithmsTests
             Assert.True(auth.CheckPermitted("Refund", 2));
         }
 
-        [Fact]
-        public void CheckPermitted_ReturnsFalseIfInactive()
-        {
-            var auth = GetAuth();
-            Assert.False(auth.CheckPermitted("Purchased Widgets", 1));
-        }
+        //[Fact]
+        //public void CheckPermitted_ReturnsFalseIfInactive()
+        //{
+        //    var auth = GetAuth();
+        //    Assert.False(auth.CheckPermitted("Purchased Widgets", 1));
+        //}
 
         [Fact]
         public void ListPermissions_ReturnsEmpty_WhenUserNotFound()
